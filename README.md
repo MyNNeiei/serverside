@@ -104,3 +104,12 @@ INSTALLED_APPS = [
 ปล.ต้อง activate myveny ก่อนที่จะรัน
 
 python manage.py shell_plus --notebook
+
+-------------------------------------------------------
+import os
+os.environ['DJANGO_ALLOW_ASYNC_UNSAFE'] = "true"
+
+# import modules
+from ชื่อตาราง.models import *
+from django.db.models import *
+from django.db.models.functions import *
